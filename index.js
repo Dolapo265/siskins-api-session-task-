@@ -4,6 +4,6 @@ fetch("https://api.disneyapi.dev/character")
         const shorterData = data.data.slice(0,5)
         const dataList = document.getElementById("film")
         const htmlString = shorterData.map((film)=>
-            `<li>character name:${film.name}   films:${film.films} </li>`).join(' ')
+            `<li>character name:${film.name} <br>  films:${film.films} </li> <hr>`).join(' ')
        return dataList.innerHTML = htmlString
-        }) 
+        })
